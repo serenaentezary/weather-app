@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.google-map {
+  color: red;
+  height: 80vh;
+  width: 100%;
+}
+
+.pin-icon {
+  font-size: 1rem;
+}
+
+.pin-icon,
+.pin-icon:active,
+.pin-icon:hover {
+  cursor: pointer;
+  margin: -15px 0 0 -8px;
+}
+
+.pin-text {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.weather-bar {
+  display: block;
+  max-height: 200px;
+  width: 100%;
+}
+
+.daily-weather-container {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.weather-time-of-day {
+  background-color: #e5f5ff;
+  padding: 1.25rem;
+}
+
+.is-closed-true {
+  display: none;
+}
+
+.is-closed-false {
+  display: block;
+}
+
+.reopen {
+  display: none;
+}
+
+.reopen.is-displayed-true {
+  display: block;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 799px) {
+  .google-map {
+    height: 70vh;
+  }
+
+  .map-h2 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .pin-icon {
+    font-size: 2vw;
+  }
+
+  .weather-bar {
+    position: absolute;
+      bottom: 0;
+  }
+
+  .daily-weather-container {
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  .weather-time-of-day {
+    margin: 1rem;
+    min-width: 300px;
+  }
+}
