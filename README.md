@@ -12,7 +12,7 @@ To use this API to get the weather, it requires that one first finds the specifi
 
 I currently am using Node.js just as a way to send my API key for Google Maps in the .env file over to the frontend so that I would not let all of GitHub know my personal key.
 
-I made the pins and the location names (both on the map and at the bottom of the map) clickable so that the user can select which cities they want to view the weather for. I also made the weather section be able to be closed so that if one wants to focus on the map, they can.
+I made the pins and the location names (both on the map and at the bottom of the map) clickable so that the user can select which cities they want to view the weather for. I also made the weather section be able to be closed so that if one wants to just focus on the map, they can.
 
 If you have any questions or comments, please feel free to reach out to me.
 
