@@ -2,13 +2,22 @@
   text-align: center;
 }
 
+h3 {
+  margin-top: 0;
+}
+
 .google-map {
   color: red;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
 }
 
+.pin {
+  margin: 0 auto;
+}
+
 .pin-icon {
+  display: inline-block;
   font-size: 1rem;
 }
 
@@ -16,29 +25,64 @@
 .pin-icon:active,
 .pin-icon:hover {
   cursor: pointer;
-  margin: -15px 0 0 -8px;
+  margin: -0.938rem 0 0 -0.5rem;
 }
 
 .pin-text {
+  background-color: #fff;
+  cursor: pointer;
+  display: inline-block;
   font-size: 1.3em;
   font-weight: 500;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .close {
+  background-color: transparent;
+  border: 0.063rem solid #000;
+  cursor: pointer;
   position: absolute;
-    top: 20px;
-    right: 20px;
+    right: 1.25rem;
+}
+
+.button-selectors {
+  margin: 0 auto;
+}
+
+.city-button {
+  background: transparent;
+  border: none;
+  border-left: 0.063rem solid #000;
+  font-size: 1rem;
+  font-weight: regular;
+  margin: 0.313rem auto;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.city-button:active,
+.city-button:hover {
+  background-color: #e5f5ff;
+  border: none;
+  border-left: 0.063rem solid #000;
+}
+
+.city-button:first-of-type {
+  border-left: none;
+}
+
+.city-button.button-selected {
+  font-weight: bold;
 }
 
 .weather-bar {
   display: block;
-  max-height: 200px;
+  max-height: 7.5rem;
   width: 100%;
 }
 
 .daily-weather-container {
-  height: 400px;
+  height: 25rem;
   overflow-y: scroll;
 }
 
@@ -56,7 +100,16 @@
 }
 
 .reopen {
+  background-color: transparent;
+  border: none;
+  color: #000;
   display: none;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.reopen:active {
+  border: none;
 }
 
 .reopen.is-displayed-true {
@@ -64,9 +117,9 @@
   padding: 2rem;
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 49.938rem) {
   .google-map {
-    height: 70vh;
+    height: 50vh;
   }
 
   .map-h2 {
@@ -79,17 +132,18 @@
   }
 
   .weather-bar {
-    position: absolute;
+    position: relative;
       bottom: 0;
   }
 
   .daily-weather-container {
     display: flex;
+    height: 20rem;
     overflow-x: scroll;
   }
   
   .weather-time-of-day {
     margin: 1rem;
-    min-width: 300px;
+    min-width: 18.75rem;
   }
 }

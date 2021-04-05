@@ -5,7 +5,7 @@ import Map from './components/Map/Map';
 const App = () => {
   return (
     <div className="App">
-      <Map zoomLevel={4} />
+      <Map zoomLevel={3.5} />
     </div>
   );
 }
