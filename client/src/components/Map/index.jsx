@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import GoogleMapReact from 'google-map-react'
 import LocationPin from '../LocationPin/LocationPin'
-import Weather from '../Weather/Weather';
+import Weather from '../Weather';
 import { cityLocations } from '../../constants'; 
 import { isNullOrUndefined } from '../../utils/helpers';
 

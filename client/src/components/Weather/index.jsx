@@ -1,5 +1,5 @@
 import React from 'react';
-import DailyWeather from '../DailyWeather/DailyWeather';
+import DailyWeather from '../DailyWeather';
 
 const Weather = ({ data, selectedCity }) => {
   return (

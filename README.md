@@ -19,9 +19,10 @@ If you have any questions or comments, please feel free to reach out to me.
 ### Future plans:
 1. Add unit tests (I ran out of time to do this, unfortunately)
 2. Redo this in TypeScript
-3. Utilize Redux so that I can clean up the `Map.jsx` file
+3. Utilize Redux so that I can clean up the `Map/index.jsx` file
 4. Improve styling, maybe talk to a designer to get a better idea of what would be desired
 5. Improve the backend, maybe also utilize React Router.
+6. Add Webpack and Babel
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
