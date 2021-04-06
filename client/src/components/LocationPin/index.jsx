@@ -6,7 +6,7 @@ const LocationPin = ({ onClick, text }) => {
   return (
     <div className="pin" onClick={() => onClick(text)}>
       <Icon icon={locationIcon} className="pin-icon" />
-      <p className="pin-text" onClick={() => onClick(text)}>{text}</p>
+      {text && <p className="pin-text" onClick={() => onClick(text)}>{text}</p>}
     </div>
   )
 }
