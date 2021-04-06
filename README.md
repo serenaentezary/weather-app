@@ -22,7 +22,7 @@ If you have any questions or comments, please feel free to reach out to me.
 3. Utilize Redux so that I can clean up the `Map/index.jsx` file
 4. Improve styling, maybe talk to a designer to get a better idea of what would be desired
 5. Improve the backend, maybe also utilize React Router.
-6. Add Webpack and Babel
+6. Add Webpack
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

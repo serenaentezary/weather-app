@@ -5,10 +5,10 @@ const Weather = ({ data, selectedCity }) => {
   return (
     <div className="weather-bar">
       <div className="city-header">
-        <h2>
+        {selectedCity.city && <h2>
           {selectedCity.city}
-        </h2>
-        <DailyWeather data={data} />
+        </h2>}
+        {data && <DailyWeather data={data} />}
       </div>
     </div>
   )
