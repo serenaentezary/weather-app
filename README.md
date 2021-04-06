@@ -17,7 +17,7 @@ I made the pins and the location names (both on the map and at the bottom of the
 If you have any questions or comments, please feel free to reach out to me.
 
 ### Future plans:
-1. Add unit tests (I ran out of time to do this, unfortunately)
+1. Fix up the unit tests (most pass, but some do not yet)
 2. Redo this in TypeScript
 3. Utilize Redux so that I can clean up the `Map/index.jsx` file
 4. Improve styling, maybe talk to a designer to get a better idea of what would be desired
