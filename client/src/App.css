@@ -137,6 +137,8 @@ h3 {
   }
 
   .daily-weather-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 20rem;
     overflow-x: scroll;
