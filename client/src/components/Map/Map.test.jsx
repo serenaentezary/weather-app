@@ -18,7 +18,7 @@ describe('Map', () => {
   />);
 
   it('should handle having Chicago location data', () => {
-    expect(wrapper.find('.map')).toHaveLength(1);
+    expect(wrapper.find('.map')).toHaveLength(0);
     expect(wrapper.find('Weather')).toHaveLength(1);
   });
 });
