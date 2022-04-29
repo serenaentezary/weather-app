@@ -30,7 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### RUN SERVER
 
-In the main directory, you can run `npm start` to have the Node.js backend running on [http://localhost:3001](http://localhost:3001) 
+In the main directory, you have to run `npm start` to have the Node.js backend running on [http://localhost:3001](http://localhost:3001) - if you put your own Google Maps API key in the .env file as the value for the the GOOGLE_MAPS_API_KEY then the map will successfully show up. 
 
 ### RUN CLIENT
 

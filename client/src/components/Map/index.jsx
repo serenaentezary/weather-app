@@ -20,7 +20,7 @@ const Map = ({ location = cityLocations[2], zoomLevel }) => {
     setIsClosed(false);
   }
 
-  const getData = async (selectedCity = chosenCity) => {
+  const getData = (selectedCity = chosenCity) => {
     const lat = selectedCity.data.lat;
     const lon = selectedCity.data.lng;
 
@@ -40,22 +40,23 @@ const Map = ({ location = cityLocations[2], zoomLevel }) => {
   const handleCityClick = (target, citySelector) => {
     if (target === citySelector.city && citySelector !== chosenCity) {
       setChosenCity(citySelector);
-      getData(citySelector);
+      handleOpen();
     }
   }
 
-  const getURLKey = () => {
-    axios.get('http://localhost:3001/api')
-    .then(response => {
+  const getURLKey = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/api');
       setApiKey(response.data.key);
-    })
-    .catch(error => console.error(error));
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   useEffect(() => {
     getURLKey();
-    getData();
-  }, []);
+    getData(chosenCity);
+  }, [ chosenCity ]); 
 
   return (
     <>
@@ -83,6 +84,7 @@ const Map = ({ location = cityLocations[2], zoomLevel }) => {
       <button
           aria-label="Click here to see weather results" 
           className={`reopen is-displayed-${isClosed}`}
+          key="open-weather-results"
           onClick={handleOpen}
         >
           <p className="display-results">Click here to display weather results</p>
@@ -91,6 +93,7 @@ const Map = ({ location = cityLocations[2], zoomLevel }) => {
         <button
           aria-label="Click here to close the weather information"
           className="close"
+          key="close"
           onClick={handleClose}
           >
             X

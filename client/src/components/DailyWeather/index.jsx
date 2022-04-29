@@ -4,16 +4,16 @@ import { isNullOrUndefined } from '../../utils/helpers'
 const DailyWeather = ({ data }) => {
   return (
     <div className="daily-weather-container">
-      {data.map((period, index) => {
+      {data.map((timePeriod, index) => {
         return (
-          isNullOrUndefined(period) ? '' : <div
+          isNullOrUndefined(timePeriod) ? '' : <div
             className="weather-time-of-day"
-            key={period.number ? `weather-${period.number}` : `weather-${index}`}
+            key={timePeriod.number ? `weather-${timePeriod.number}` : `weather-${index}`}
           >
-            {period.name && <h3>{period.name}</h3>}
-            {period.icon && <img alt="Icon for weather" className="icon" src={`${period.icon}`} />}
-            {period.detailedForecast && <p className="forecast-text">
-              {period.detailedForecast}
+            {timePeriod.name && <h3>{timePeriod.name}</h3>}
+            {timePeriod.icon && <img alt="Icon for weather" className="icon" src={`${timePeriod.icon}`} />}
+            {timePeriod.detailedForecast && <p className="forecast-text">
+              {timePeriod.detailedForecast}
             </p>}
           </div>
         )
